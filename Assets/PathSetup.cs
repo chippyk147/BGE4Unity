@@ -7,10 +7,10 @@ public class PathSetup : MonoBehaviour {
 	void Start () {
         Path path = GetComponent<Boid>().path;
 
-        path.AddWaypoint(new Vector3(10, 0, 10));
-        path.AddWaypoint(new Vector3(50, 0, 10));
-        path.AddWaypoint(new Vector3(50, 0, 70));
-        path.AddWaypoint(new Vector3(0, 0, 20));
+        path.AddWaypoint(new Vector3(500, 100, 500));
+        path.AddWaypoint(new Vector3(500, 100, 1500));
+        path.AddWaypoint(new Vector3(-500, 100, 1500));
+        path.AddWaypoint(new Vector3(-500, 100, 500));
 
         gameObject.renderer.material.color = Color.cyan;
 	
